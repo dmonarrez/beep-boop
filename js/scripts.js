@@ -6,22 +6,31 @@ function checkFor321(num) {
   } else if(num == 2) {
     return 'Boop!'
   } else if(num == 1) {
-      return 'Beep!'
+    return 'Beep!'
   } else {
     return num
   }
 }
 
 function numbersLessThan(num) {
-  let numsArr = []
+  let numsArr = [];
   for(var i = 0; i < num; i ++){
-    numsArr.push(i);
+    let numString = i.toString();
+    numsArr.push(numString);
   }
   return numsArr
 }
 
 function beepBoop(num) {
   let beepBoopArr = [];
+  let numsLessThan = numbersLessThan(num);
+  //for every num less than num
+  for(let i = 0; i < numsLessThan.length; i++) {
+    //for every digit in numLessThan[i]
+    for(let j = 0; j < numsLessThan[i].length; j++) {
+        beepBoopArr.push(checkFor321(numbersLessThan[i][j]));
+    }
+  }
 }
 
 
