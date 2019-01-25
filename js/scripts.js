@@ -34,7 +34,7 @@ function beepBoop(num) {
   for(var i = 0; i < numsLessThan.length; i++) {
     beepBoopArr.push(checkFor321(numsLessThan[i]));
   }
-  return beepBoopArr
+  return beepBoopArr.join(', ');
 }
 
 
