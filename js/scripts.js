@@ -46,8 +46,8 @@ $(document).ready(function (){
     let number = $("#number").val();
     let name = $("#name").val();
 
-    $("#happyBot").hide();
-    $("#crazyBot").addClass("showCrazyBot").show();
+    $("#happyBot").removeClass("happyBot").addClass("crazyBot");
+    $("#crazyBot").removeClass("crazyBot").addClass("happyBot");
     $("#result").text(beepBoop(number, name)).show();
 
   });

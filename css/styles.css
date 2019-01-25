@@ -31,20 +31,14 @@ input {
   color: white;
 }
 
-#happyBot {
+.happyBot {
   display: block;
+  padding-top: 30px;
   width: 200px;
   margin-left: auto;
   margin-right: auto;
 }
 
-#crazyBot {
+.crazyBot {
   display: none;
-}
-
-.showCrazyBot {
-  display: block;
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
 }
