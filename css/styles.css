@@ -13,8 +13,13 @@ h1 {
 }
 
 .body {
+  padding-top: 100px;
   color: white;
   text-align: center;
+}
+
+input {
+  color: black;
 }
 
 #submit {
@@ -24,4 +29,22 @@ h1 {
 #result {
   text-align: center;
   color: white;
+}
+
+#happyBot {
+  display: block;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#crazyBot {
+  display: none;
+}
+
+.showCrazyBot {
+  display: block;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }

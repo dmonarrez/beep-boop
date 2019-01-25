@@ -1,9 +1,9 @@
 //check if first digit is 1 2 or 3
 //if it isnt check the next diget (if possible) or print number
-function checkFor321(num) {
+function checkFor321(num, name) {
   let value
   if(num.includes('3')){
-    value = "I'm sorry, Dave. I'm afraid I can't do that.";
+    value = "I'm sorry, " + name +". I'm afraid I can't do that.";
   } else if(num.includes('2')){
     value = 'boop';
   } else if(num.includes('1')){
@@ -26,13 +26,13 @@ function numbersLessThan(num) {
 }
 
 
-function beepBoop(num) {
+function beepBoop(num, name) {
   //debugger;
   let beepBoopArr = [];
   let numsLessThan = numbersLessThan(num);
 
   for(var i = 0; i < numsLessThan.length; i++) {
-    beepBoopArr.push(checkFor321(numsLessThan[i]));
+    beepBoopArr.push(checkFor321(numsLessThan[i], name));
   }
   return beepBoopArr.join(', ');
 }
@@ -44,7 +44,11 @@ $(document).ready(function (){
     event.preventDefault();
     //input sentence
     let number = $("#number").val();
+    let name = $("#name").val();
 
-    $("#result").text(beepBoop(number));
+    $("#happyBot").hide();
+    $("#crazyBot").addClass("showCrazyBot").show();
+    $("#result").text(beepBoop(number, name)).show();
+
   });
 });
