@@ -1,20 +1,27 @@
 body, html {
-  background-image: url("../img/robot-bg2.jpg");
+  background-image: url("../img/simpleBlue2.jpg");
   display: block;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 h1 {
-  font-size: 50px;
+  color: white;
+  font-family: 'Monoton';
+  font-size: 100px;
   text-align: center;
 }
 
-.header {
-  padding-top: 20px;
-  background-color: rgba(169, 169, 169, 0.5);
+.body {
+  color: white;
+  text-align: center;
 }
 
-.body {
-  background-color: rgba(169, 169, 169, 0.5);
+#submit {
+  color: black;
+}
+
+#result {
+  text-align: center;
+  color: white;
 }
