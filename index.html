@@ -15,21 +15,22 @@
     <div class="container">
       <h1 class="animated bounceInLeft delay-1s">Robot Counter</h1>
       <div class="body animated fadeInUpBig delay-2s">
-        <form  id="pig-latin">
-          <div class="form-group">
-            <label for="sentence">Please enter a number:</label>
-            <input id="number" type="number">
-            <label for="sentence">Please enter your name:</label>
-            <input id="name" type="text">
+        <form>
+          <div class="form-row">
+            <div class="col-xs-6">
+              <input id="name" class="form-control" type="text" placeholder="Name">
+            </div>
+            <div class="col-xs-6">
+              <input id="number" class="form-control" type="number" placeholder="Number">
+            </div>
           </div>
-
           <button type="submit" class="btn" id="submit">Count!</button>
         </form>
       </div>
       <br>
       <br>
       <div id="result">
-
+        <!-- output -->
       </div>
       <div class="robot">
         <img id="happyBot" class="happyBot" src="img/happyRobot.png" alt="Happy Bot">

@@ -1,5 +1,4 @@
-//check if first digit is 1 2 or 3
-//if it isnt check the next diget (if possible) or print number
+//check if number includes 1, 2, or 3
 function checkFor321(num, name) {
   let value
   if(num.includes('3')){
@@ -13,8 +12,7 @@ function checkFor321(num, name) {
   }
   return value
 }
-//checkFor321('32');
-
+//find all numbers less than input
 function numbersLessThan(num) {
   let numsArr = [];
   for(var i = 0; i <= num; i ++){
@@ -25,9 +23,8 @@ function numbersLessThan(num) {
   return numsArr
 }
 
-
+//final beep boop function
 function beepBoop(num, name) {
-  //debugger;
   let beepBoopArr = [];
   let numsLessThan = numbersLessThan(num);
 
@@ -42,12 +39,13 @@ function beepBoop(num, name) {
 $(document).ready(function (){
   $("#pig-latin").submit(function (event){
     event.preventDefault();
-    //input sentence
+    //user input
     let number = $("#number").val();
     let name = $("#name").val();
-
+    //change robot image
     $("#happyBot").removeClass("happyBot").addClass("crazyBot");
     $("#crazyBot").removeClass("crazyBot").addClass("happyBot");
+    //return logic to user
     $("#result").text(beepBoop(number, name)).show();
 
   });
