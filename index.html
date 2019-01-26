@@ -15,14 +15,12 @@
     <div class="container">
       <h1 class="animated bounceInLeft delay-1s">Robot Counter</h1>
       <div class="body animated fadeInUpBig delay-2s">
-        <form>
-          <div class="form-row">
-            <div class="col-xs-6">
-              <input id="name" class="form-control" type="text" placeholder="Name">
-            </div>
-            <div class="col-xs-6">
-              <input id="number" class="form-control" type="number" placeholder="Number">
-            </div>
+        <form  id="pig-latin">
+          <div class="form-group">
+            <label for="sentence">Please enter your name:</label>
+            <input id="name" type="text">
+            <label for="sentence">Please enter a number:</label>
+            <input id="number" type="number">
           </div>
           <button type="submit" class="btn" id="submit">Count!</button>
         </form>
@@ -33,8 +31,8 @@
         <!-- output -->
       </div>
       <div class="robot">
-        <img id="happyBot" class="happyBot" src="img/happyRobot.png" alt="Happy Bot">
-        <img id="crazyBot" class="crazyBot" src="img/crazyRobot.png" alt="Crazy Bot">
+        <img id="happyBot" class="happyBot animated infinite bounce" src="img/happyRobot.png" alt="Happy Bot">
+        <img id="crazyBot" class="crazyBot animated infinite tada" src="img/crazyRobot.png" alt="Crazy Bot">
       </div>
     </div>
   </body>
