@@ -8,13 +8,13 @@
 
 _This site is a program that counts up to a number that is input by the user, and alters numbers based on if they contain a 1, 2, or 3._
 
-##Specs
+## Specs
 
-#Spec: _The program finds all numbers less than the input(including the input)_
+# Spec: _The program finds all numbers less than the input(including the input)_
 * _Input: '5'_
 * _Output: '0, 1, 2, 3, 4, 5'_
 
-#Spec: _The program checks for 1, 2, or 3 in every number in the array of numbers less than the input and transforms the value accordingly_
+# Spec: _The program checks for 1, 2, or 3 in every number in the array of numbers less than the input and transforms the value accordingly_
 * _Input: '13'_
 * _Output: 'I'm sorry, Name. I'm afraid I can't do that.'_
 * _Input: '21'_
